@@ -33,7 +33,6 @@ namespace CIXReader.SubViews
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tsvMessages = new CIXReader.Controls.CRListView();
             this.singleColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tsvStatusPanel = new System.Windows.Forms.Panel();
@@ -59,10 +58,12 @@ namespace CIXReader.SubViews
             this.tsvMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsvMessages.FullRowSelect = true;
             this.tsvMessages.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.tsvMessages.HideSelection = false;
             this.tsvMessages.Location = new System.Drawing.Point(0, 0);
             this.tsvMessages.MultiSelect = false;
             this.tsvMessages.Name = "tsvMessages";
             this.tsvMessages.OwnerDraw = true;
+            this.tsvMessages.SearchRow = 0;
             this.tsvMessages.ShowGroups = false;
             this.tsvMessages.Size = new System.Drawing.Size(530, 215);
             this.tsvMessages.TabIndex = 0;

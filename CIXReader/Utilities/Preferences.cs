@@ -39,6 +39,7 @@ namespace CIXReader.Utilities
         private bool _startOffline;
         private bool _useBeta;
         private bool _startInHomePage;
+        private bool _tightThreadView;
         private bool _enableLogFile;
         private bool _archiveLogFile;
         private bool _enableSmartFolderCounts;
@@ -66,6 +67,7 @@ namespace CIXReader.Utilities
         public const string MAPref_ShowToolBar = "ShowToolBar";
         public const string MAPref_StartOffline = "StartOffline";
         public const string MAPref_LastAddress = "LastAddress";
+        public const string MAPref_TightThreadView = "TightThreadView";
         public const string MAPref_CacheCleanUpFrequency = "CacheCleanUpFrequency";
         public const string MAPref_LastCacheCleanUp = "LastCacheCleanUp";
         public const string MAPref_UseBeta = "UseBeta";
@@ -109,6 +111,7 @@ namespace CIXReader.Utilities
             _viewMenuBar = ReadBoolean(MAPref_ViewMenuBar, true);
             _showToolBar = ReadBoolean(MAPref_ShowToolBar, true);
             _startOffline = ReadBoolean(MAPref_StartOffline);
+            _tightThreadView = ReadBoolean(MAPref_TightThreadView);
             _cacheCleanUpFrequency = ReadInteger(MAPref_CacheCleanUpFrequency);
             _lastCacheCleanUp = ReadDate(MAPref_LastCacheCleanUp, DateTime.MinValue);
             _useBeta = ReadBoolean(MAPref_UseBeta);
@@ -432,6 +435,19 @@ namespace CIXReader.Utilities
                 {
                     _startInHomePage = value;
                     WriteBoolean(MAPref_StartInHomePage, value);
+                }
+            }
+        }
+        public bool TightThreadView
+        {
+            get { return _tightThreadView; }
+
+            set
+            {
+                if (_tightThreadView != value)
+                {
+                    _tightThreadView = value;
+                    WriteBoolean(MAPref_TightThreadView, value);
                 }
             }
         }
@@ -771,6 +787,8 @@ namespace CIXReader.Utilities
                 PreferencesChanged(null, new PreferencesChangedEventArgs { Name = Key });
             }
         }
+
+
     }
 
     /// <summary>

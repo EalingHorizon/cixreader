@@ -43,6 +43,7 @@
             this.settingsSeparator2 = new System.Windows.Forms.GroupBox();
             this.settingsEditorLabel = new System.Windows.Forms.Label();
             this.settingsShowCounts = new System.Windows.Forms.CheckBox();
+            this.settingsTightThreadView = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // settingsShowToolbar
@@ -77,7 +78,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsSeparator1.Location = new System.Drawing.Point(4, 74);
             this.settingsSeparator1.Name = "settingsSeparator1";
-            this.settingsSeparator1.Size = new System.Drawing.Size(376, 2);
+            this.settingsSeparator1.Size = new System.Drawing.Size(380, 2);
             this.settingsSeparator1.TabIndex = 3;
             this.settingsSeparator1.TabStop = false;
             // 
@@ -123,7 +124,7 @@
             this.settingsSpellAsYouType.AutoSize = true;
             this.settingsSpellAsYouType.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsSpellAsYouType.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.settingsSpellAsYouType.Location = new System.Drawing.Point(116, 254);
+            this.settingsSpellAsYouType.Location = new System.Drawing.Point(116, 259);
             this.settingsSpellAsYouType.Name = "settingsSpellAsYouType";
             this.settingsSpellAsYouType.Size = new System.Drawing.Size(152, 17);
             this.settingsSpellAsYouType.TabIndex = 14;
@@ -197,9 +198,9 @@
             // 
             this.settingsSeparator2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.settingsSeparator2.Location = new System.Drawing.Point(0, 239);
+            this.settingsSeparator2.Location = new System.Drawing.Point(0, 251);
             this.settingsSeparator2.Name = "settingsSeparator2";
-            this.settingsSeparator2.Size = new System.Drawing.Size(376, 2);
+            this.settingsSeparator2.Size = new System.Drawing.Size(380, 2);
             this.settingsSeparator2.TabIndex = 12;
             this.settingsSeparator2.TabStop = false;
             // 
@@ -208,7 +209,7 @@
             this.settingsEditorLabel.AutoSize = true;
             this.settingsEditorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsEditorLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.settingsEditorLabel.Location = new System.Drawing.Point(63, 255);
+            this.settingsEditorLabel.Location = new System.Drawing.Point(63, 260);
             this.settingsEditorLabel.Name = "settingsEditorLabel";
             this.settingsEditorLabel.Size = new System.Drawing.Size(44, 13);
             this.settingsEditorLabel.TabIndex = 13;
@@ -227,12 +228,26 @@
             this.settingsShowCounts.UseVisualStyleBackColor = true;
             this.settingsShowCounts.CheckedChanged += new System.EventHandler(this.settingsShowCounts_CheckedChanged);
             // 
+            // settingsTightThreadView
+            // 
+            this.settingsTightThreadView.AutoSize = true;
+            this.settingsTightThreadView.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.settingsTightThreadView.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.settingsTightThreadView.Location = new System.Drawing.Point(116, 231);
+            this.settingsTightThreadView.Name = "settingsTightThreadView";
+            this.settingsTightThreadView.Size = new System.Drawing.Size(113, 17);
+            this.settingsTightThreadView.TabIndex = 12;
+            this.settingsTightThreadView.Text = "Tight &Thread View";
+            this.settingsTightThreadView.UseVisualStyleBackColor = true;
+            this.settingsTightThreadView.CheckedChanged += new System.EventHandler(this.settingsTightThreadView_CheckedChanged);
+            // 
             // SettingsViewing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 297);
+            this.ClientSize = new System.Drawing.Size(390, 290);
             this.ControlBox = false;
+            this.Controls.Add(this.settingsTightThreadView);
             this.Controls.Add(this.settingsShowCounts);
             this.Controls.Add(this.settingsEditorLabel);
             this.Controls.Add(this.settingsShowToolbar);
@@ -279,5 +294,6 @@
         private System.Windows.Forms.GroupBox settingsSeparator2;
         private System.Windows.Forms.Label settingsEditorLabel;
         private System.Windows.Forms.CheckBox settingsShowCounts;
+        private System.Windows.Forms.CheckBox settingsTightThreadView;
     }
 }

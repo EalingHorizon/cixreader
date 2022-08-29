@@ -38,7 +38,7 @@ namespace CIXReader.Forms
             settingsShowToolbar.Checked = Preferences.StandardPreferences.ShowToolBar;
             settingsShowFullDate.Checked = Preferences.StandardPreferences.ShowFullDate;
             settingsShowCounts.Checked = Preferences.StandardPreferences.EnableSmartFolderCounts;
-
+            settingsTightThreadView.Checked = Preferences.StandardPreferences.TightThreadView;
             settingsTheme.Items.Clear();
             foreach (UITheme theme in UI.Themes)
             {
@@ -178,6 +178,17 @@ namespace CIXReader.Forms
             if (!_isInitialising)
             {
                 Preferences.StandardPreferences.EnableSmartFolderCounts = settingsShowCounts.Checked;
+            }
+        }
+
+        private void settingsTightThreadView_CheckedChanged(object sender, EventArgs e)
+        {
+            /// <summary>
+            /// Toggle TightThreadView
+            /// </summary> 
+            if (!_isInitialising)
+            {
+                Preferences.StandardPreferences.TightThreadView = settingsTightThreadView.Checked;
             }
         }
     }

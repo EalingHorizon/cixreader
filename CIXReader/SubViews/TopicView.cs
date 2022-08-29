@@ -650,6 +650,11 @@ namespace CIXReader.SubViews
                 _collapseConv = Preferences.StandardPreferences.CollapseConv;
                 ReloadList();
             }
+            if (args.Name == Preferences.MAPref_TightThreadView)
+            {
+                //mv _tightThreadView = Preferences.StandardPreferences.TightThreadView;
+                RefreshTheme();
+            }
         }
 
         /// <summary>
@@ -816,8 +821,14 @@ namespace CIXReader.SubViews
         {
             _font = UI.GetFont(UI.Forums.font, UI.Forums.fontsize);
             _rootFont = UI.GetFont(UI.Forums.rootfont, UI.Forums.rootfontsize, FontStyle.Bold);
-            _rowHeight = (_font.Height + 4)*2;
-
+            if (Preferences.StandardPreferences.TightThreadView)
+            {
+                _rowHeight = (_font.Height + 2) * 1;
+            }
+            else
+            {
+                _rowHeight = (_font.Height + 4) * 2;
+            }
             tsvMessages.Font = _font;
             tsvMessages.SetHeight(_rowHeight);
 

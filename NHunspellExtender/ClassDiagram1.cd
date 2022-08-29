@@ -95,6 +95,7 @@
         <TypeIdentifier>
           <NewMemberFileName>NHunspellTextBoxExtender.vb</NewMemberFileName>
         </TypeIdentifier>
+        <Lollipop Position="0.2" />
       </Class>
       <Enum Name="NHunspellExtender.NHunspellTextBoxExtender.SuggestionNumbers" Collapsed="true">
         <TypeIdentifier>
@@ -103,7 +104,7 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>CTkYCDhDiJGWBJgDAAFDAUYAAAAEkFADAAAlHAAQFGQ=</HashCode>
+      <HashCode>iTgYCHhDiLGWBNgDCAFDgUYAQAAEkFADACAlHAAZ1mQ=</HashCode>
       <FileName>NHunspellTextBoxExtender.vb</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -129,20 +130,20 @@
   <Class Name="NHunspellExtender.SpellCheckForm" Collapsed="true">
     <Position X="2.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BASYRAEQECACAAAQARShgAJGAAAYAUAEAAgQAAAgAAA=</HashCode>
+      <HashCode>BASYRgEQECACAAAQARShgAJGAAAYAUAEAAgQAAAgBAA=</HashCode>
       <FileName>SpellCheckForm.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NHunspellExtender.My.MySettings" Collapsed="true">
     <Position X="2.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Module Name="NHunspellExtender.My.Resources.Resources" Collapsed="true">
     <Position X="2.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAAAAAAAAAAAABEEAAAQAAABAIAQAAAAAAAIQ=</HashCode>
+      <HashCode>AAAIAAQAAAAAAAAAAAABEEAIAQAAABAIAQAAAAAAAIQ=</HashCode>
     </TypeIdentifier>
   </Module>
   <Module Name="NHunspellExtender.My.MySettingsProperty" Collapsed="true">

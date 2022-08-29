@@ -705,6 +705,7 @@
     <Content Include="Images\tbWithdraw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Resources\smallFolder.png" />
     <None Include="Resources\Inbox.png" />
     <None Include="Resources\rulesPreferences.tiff" />
